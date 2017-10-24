@@ -1,0 +1,259 @@
+.error input:focus {
+	color: red;
+	border: 1px solid #000;
+}
+
+.form-group label.error {
+	width: 100%;
+  float: left;
+  font-size: 12px;
+  color: #e4002b;
+  font-family: 'ProximaNova-Regular';
+  padding: 2px 0px 7px 0px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.form-group input.error {
+  border: 1px solid #e4002b;
+}
+
+.form-group input.form-error {
+	border: 1px solid #e4002b; 
+}
+
+.form-group div.error-message {
+	width: 100%;
+  float: left;
+  font-size: 12px;
+  color: #e4002b;
+  font-family: 'ProximaNova-Regular';
+  padding: 2px 0px 7px 0px;
+  font-weight: normal;
+}
+
+.flash_div .success {
+	width: 100%;
+  float: left;
+  font-size: 22px;
+  color: #47ad0c;
+  font-family: 'ProximaNova-Regular';
+  padding: 2px 0px 7px 0px;
+  font-weight: normal;
+}
+
+.flash_div .error {
+	width: 100%;
+	float: left;
+	font-size: 20px;
+	color: #e4002b;
+	font-family: 'ProximaNova-Regular';
+	margin: -20px 0px 20px 0px;
+	font-weight: normal;
+}
+
+
+.email-sent {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.login-panel h2 {
+  font-family: 'ProximaNova-Bold';
+  font-size: 29px;
+  color: #383f44;
+  text-align: center;
+}
+
+.login-panel h2 span {
+  display: block;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #666666;
+  padding-top: 4px;
+  padding-bottom: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.ok-align {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.ok-bttn {
+  background-color: #707b83;
+  border: 1px solid #707b83;
+  color: #ffffff;
+  width: 83px;
+  height: 42px;
+  border-radius: 38px;
+  font-size: 16px;
+  outline: 0;
+  margin: 0 auto;
+  line-height: 29px;
+}
+.display-none{
+	display:none;
+}
+/*.loading{
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/loading.gif) 50% 50% no-repeat #332c2c;
+    opacity: .7;
+	display:none;
+}*/
+.profile-able-bttn {
+    width: 111px;
+    height: 42px;
+    border-radius: 45px;
+    background-color: #5a6770;
+    border: 1px solid #5a6770;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'ProximaNova-Semibold';
+}
+#cpinError{
+  color: red;
+}
+#cpasswordError{
+  color: red;
+}
+#passwordError{
+  color: red;
+}
+#pinError{
+  color: red;
+}
+.formError .error {
+    color: red !important;
+    font-weight: inherit !important;
+}
+
+.success-flashmsg {
+  width: 100% !important;
+  float: left !important;
+  height: 51px;
+  background-color: #ff0000;
+  font-family: 'ProximaNova-Semibold' !important;
+  font-size: 16px !important;
+  color: green !important;
+  margin: -20px 0px 10px 0px;
+  padding: 15px 20px 16px 20px !important;
+}
+
+.success-flashmsg img {
+  margin-right: 6px;
+  margin-top: -3px;
+}
+
+.success-flashmsg-loginSignup {
+  width: 98% !important;
+  float: left !important;
+  height: 51px;
+  color: #3c763d !important;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+  font-family: 'ProximaNova-Semibold' !important;
+  font-size: 16px !important;
+  color: green !important;
+  margin: 20px 0px 10px 20px;
+  padding: 15px 20px 16px 20px !important;
+}
+
+
+.success-flashmsg-loginSignup img {
+  margin-right: 6px;
+  margin-top: -3px;
+}
+
+.error-flashmsg-loginSignup {
+  width: 98% !important;
+  float: left !important;
+  height: 51px;
+  color: #a94442 !important;
+  background-color: #f2dede !important;
+  border-color: #ebccd1 !important;
+  font-family: 'ProximaNova-Semibold' !important;
+  font-size: 16px !important;
+  margin: 20px 0px 10px 20px;
+  padding: 15px 20px 16px 20px !important;
+}
+
+
+.error-flashmsg-loginSignup img {
+  margin-right: 6px;
+  margin-top: -3px;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.link-style-none a{
+  color: #383f44 !important;
+  outline: none !important;
+}
+.text-docration-none{
+    text-decoration: none !important;
+}
+.width-auto-set span {width: auto !important;}
+.desc .asc{ background :none ;padding: 0px;}
+.date-th span.asc { background :none !important; padding: 0px;}
+.asc .asc{ background :none; padding: 0px;}
+.loan-int-rate-borower {
+  width: 30% !important;
+}
+.loan-int-role-borower {
+  width: 15% !important;
+}
+
+.divHightDrop {height: 40px !important}
+.docthpadingtop {padding-top: 18px !important}
+.linehight-detail-action {line-height: 30px !important}
+.loanAmlountDiv { width: 17% !important}
+.disable-btn {
+    background-color: #d8d8d8 !important;
+}
+.loan_font-18 span{
+  font-size: 18px !important;
+}
+.loan_font-14 span{
+  font-size: 14px;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 12px 15px 12px 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #6e7f8a;
+  border-radius: 4px;
+  font-family: 'ProximaNova-Regular';
+  font-size: 14px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=bootstrap.css.map */
+.toolarw + .tooltip > .tooltip-arrow { bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #6e7f8a; 
+  border-width: 0 5px 5px;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  }
+.msg-date{
+	margin-top:-10px;
+	font-size: 12px;
+}
+.social-icons a {text-decoration: none !important;border: 0px !important}

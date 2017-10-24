@@ -1,0 +1,178 @@
+
+	{% load staticfiles %}
+
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <title>Python Demo</title>
+
+	    <!-- Core CSS - Include with every page -->
+	    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+		<link href="{% static 'css/homepage.css' %}" rel="stylesheet">
+		<link href="{% static 'css/slick.css' %}" rel="stylesheet">
+		<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+	</head>
+
+	<body>
+
+	<!--<nav class="navbar navbar-default">-->
+	  <!--<div class="container-fluid">-->
+	    <!--<div class="navbar-header">-->
+	      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+	        <!--<span class="sr-only">Toggle navigation</span>-->
+	        <!--<span class="icon-bar"></span>-->
+	        <!--<span class="icon-bar"></span>-->
+	        <!--<span class="icon-bar"></span>-->
+	      <!--</button>-->
+	      <!--<a class="navbar-brand" href="#">Rocky Balbo</a>-->
+	    <!--</div>-->
+
+	    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+	      <!--<ul class="nav navbar-nav navbar-right">-->
+	        <!---->
+	        <!--<li class="dropdown">-->
+	          <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>-->
+	          <!--<ul class="dropdown-menu" role="menu">-->
+	            <!--<li><a href="/home">home</a></li>-->
+	            <!--<li><a href="#">Another action</a></li>-->
+	            <!--<li><a href="#">Something else here</a></li>-->
+	            <!--<li class="divider"></li>-->
+	            <!--<li><a href="#">Separated link</a></li>-->
+	            <!--<li class="divider"></li>-->
+	            <!--<li><a href="/logout">Logout</a></li>-->
+	          <!--</ul>-->
+	        <!--</li>-->
+
+	      <!--</ul>-->
+	    <!--</div>-->
+	  <!--</div>-->
+	<!--</nav>-->
+
+	<div role="navigation" class="navbar navbar-default navbar-fixed-top text-center addNAVnewBG change-color">
+	  <div class="container">
+		<div class="row">
+			  <div class="navbar-header">
+				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="/login">
+					<img alt="" src="{% static 'img/static-page-fastclose-logo.png' %}">
+				</a>
+			  </div><!-- navbar-header-->
+
+			<div class="navbar-collapse collapse landing-links-panel">
+
+
+			  <ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="javascript:void(0);">ABOUT US</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">FAQs</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">CONTACT US</a>
+				</li>
+			  	{% if user.is_authenticated %}
+				<li>
+					<a href="/logout">LOGOUT</a>
+				</li>
+				{% else %}
+				<li>
+					<a href="/login">SIGN IN</a>
+				</li>
+				<li>
+					<a href="/register">SIGN UP</a>
+				</li>
+				{% endif %}
+			  </ul><!-- nav -->
+			</div>
+			<!-- navbar-collapse -->
+		</div>
+	  </div><!-- container -->
+	</div>
+	<section class="">
+	<div class="container">
+		<div class="row">
+			<div class="static-content">
+				<h1>Our mission</h1>
+				<p>this is demo of django header and footer</p>
+				<h1>django</h1>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and ty
+					pesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+					1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+					'has survived not only five centuries, but also the leap into electronic typesetting, remaining
+					essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+					, and more recently with desktop publishing software like Aldus PageMaker including versions
+					of Lorem Ipsum.
+				</p>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	            {% block content %}
+	            {% endblock %}
+
+	<!--Footer -->
+	<footer class="main-footer-bg">
+		<div class="container">
+			<div class="row">
+				<div class="main-footer-nav">
+					<div class="main-footer-panel">
+						<a href="/login">
+							<img alt="" src="{% static 'img/static-page-fastclose-logo.png' %}">
+						</a>
+						<ul>
+							<li>
+								<a target="_blank" class="" href="javascript:void(0);">About Us</a>						</li>
+							<li>
+							<a target="_blank" class="" href="javascript:void(0);">FAQs</a>						</li>
+							<li>
+							<a target="_blank" class="" href="javascript:void(0);">Terms &amp; Conditions</a>						</li>
+							<li>
+							<a target="_blank" class="" href="javascript:void(0);">Privacy Policy</a>						</li>
+							<li>
+							<a target="_blank" class="" href="javascript:void(0);">Contact Us</a>						</li>
+						</ul>
+					</div>
+					<span>
+					<a target="_blank" href="javascript:void(0);">
+						<img alt="" src="{% static 'img/fb-image.png' %}">
+					</a>
+					<a target="_blank" href="javascript:void(0);">
+						<img alt="" src="{% static 'img/twitter-image.png' %}">
+					</a>
+
+					<a target="_blank" href="javascript:void(0);">
+						<img alt="" src="{% static 'img/linkden-img.png' %}">
+					</a>
+					<a target="_blank" href="javascript:void(0);">
+						<img alt="" src="{% static 'img/google-plus-image.png' %}">
+					</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Footer-->
+	    <!-- Core Scripts - Include with every page -->
+	    <script src = "{% static 'js/jquery-3.1.1.min.js' %}"></script>
+
+	    <script src = "{% static 'js/bootstrap.min.js' %}"></script>
+		<script src = "{% static 'js/slick.min.js' %}"></script>
+	    {% block javascript %}
+	    {% endblock %}
+
+	</body>
+
+	</html>

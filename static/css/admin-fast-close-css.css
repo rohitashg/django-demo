@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'glyphicons-halflings-regular';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+       url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src:  url('../fonts/ProximaNova-Bold.eot') format('embedded-opentype');
+  src:  url('../fonts/ProximaNova-Bold.woff') format('woff'), 
+        url('../fonts/ProximaNova-Bold.ttf')  format('truetype'), 
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src:  url('../fonts/ProximaNova-Light.eot') format('embedded-opentype');
+  src:  url('../fonts/ProximaNova-Light.woff') format('woff'), 
+        url('../fonts/ProximaNova-Light.ttf')  format('truetype'), 
+        url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src:  url('../fonts/ProximaNova-Regular.eot') format('embedded-opentype');
+  src:  url('../fonts/ProximaNova-Regular.woff') format('woff'), 
+        url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), 
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src:  url('../fonts/ProximaNova-Semibold.eot') format('embedded-opentype');
+  src:  url('../fonts/ProximaNova-Semibold.woff') format('woff'), 
+        url('../fonts/ProximaNova-Semibold.ttf')  format('truetype'), 
+        url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html{
+  min-height: 100%
+}
+body {
+  min-height: 100%;
+  font-family: 'ProximaNova-Regular';
+  background-color: #f3f8fb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+
+
+a:hover, a:focus{
+  color: #none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+  margin:0;
+  padding:0;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.cls{
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.padding-zero {
+  padding: 0px 0px;
+}
+
+.login-bg {
+  background-image: url(../img/slider-image.png);
+  width:  100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.admin-logo {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 45px 0px;
+}
+
+.admin-login-panel {
+  width: 500px;
+  margin: 4% auto 0px auto;
+  background-color: #ffffff;
+  padding: 49px 49px 35px 49px;
+  border-radius: 2px;
+}
+
+.admin-login-panel h1 {
+  font-family: 'ProximaNova-Semibold';
+  font-size: 31px;
+  color: #383f44;
+}
+
+.admin-login-panel h1 span {
+  display: block;
+  font-family: 'ProximaNova-Regular';
+  font-style: italic;
+  font-size: 14px;
+  color: #666666;
+  padding-top: 4px;
+  padding-bottom: 30px;
+  line-height: 20px;
+}
+
+.admin-login-panel .form-group input {
+  border: 1px solid #e2e2e2;
+  border-radius: 25px;
+  height: 42px;
+  padding: 6px 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  font-family: 'ProximaNova-Regular';
+  color: #383f44;
+  font-size: 16px;
+}
+
+.forgot-pass {
+  width: 100%;
+  float: left;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #383f44;    
+  margin: 10px 0px 20px 0px;
+}
+
+.forgot-pass a {
+  color: #383f44; 
+}
+
+.forgot-pass a:hover {
+  color: #e4002b; 
+}
+
+.back-to {
+  width: 100%;
+  float: left;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #383f44;    
+  margin: 10px 0px 20px 0px;
+}
+
+.back-to span a {
+  color: #e4002b; 
+}
+
+.back-to span a:hover {
+  color: #e4002b; 
+}
+
+
+.sign-in-bttn {
+  background-color: #707b83;
+  border: 1px solid #707b83;
+  color: #ffffff;
+  width: 109px;
+  height: 42px;
+  border-radius: 38px;
+  float: right;
+  font-size: 16px;
+  outline: 0;
+}
+
+.admin-error-msg span {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  color: #e4002b;
+  font-family: 'ProximaNova-Regular';
+  padding: 2px 0px 7px 0px;
+}
+
+.admin-error-msg {
+  border-radius: 25px;
+  border: 1px solid #e4002b;
+}
+
+.mgtop-25 {
+  margin-top: 25px;
+}
+
+.admin-login-footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #959696;
+  margin-top: 16%;
+  margin-bottom: 20px;
+}
+
+.email-sent {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.admin-login-panel h2 {
+  font-family: 'ProximaNova-Bold';
+  font-size: 29px;
+  color: #383f44;
+}
+
+.admin-login-panel h2 span {
+  display: block;
+  font-family: 'ProximaNova-Regular';
+  font-size: 16px;
+  color: #666666;
+  padding-top: 4px;
+  padding-bottom: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.ok-align {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.ok-bttn {
+  background-color: #707b83;
+  border: 1px solid #707b83;
+  color: #ffffff;
+  width: 83px;
+  height: 42px;
+  border-radius: 38px;
+  font-size: 16px;
+  outline: 0;
+  margin: 0 auto;
+}
+
+.form-group input.error {
+  border: 1px solid #e4002b;
+}
+
+.form-group #emailError {
+  color: #e4002b;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 13px;
+  padding: 2px 0 7px;
+  width: 100%;
+}
+
+.form-group #passwordError {
+  color: #e4002b;
+  float: left;
+  font-family: "ProximaNova-Regular";
+  font-size: 13px;
+  padding: 2px 0 7px;
+  width: 100%;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: 0px auto -webkit-focus-ring-color !important;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.forgot-padding {
+  padding: 65px 49px 61px 49px;
+}
+
+.mgtop20 {
+  margin-top: 20px;
+}
+
+
+.live-search-panel {
+  margin-bottom: 24px;
+}
+
+.live-search-panel .select .bootstrap-select {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+}
+
+.live-search-panel .select .bootstrap-select button.dropdown-toggle {
+  border: 1px solid #e2e2e2;
+  border-radius: 25px;
+  height: 42px;
+  padding: 6px 45px 6px 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  font-family: 'ProximaNova-Regular';
+  color: #383f44;
+  font-size: 16px;
+}
+
+.live-search-panel .select .bootstrap-select button span.caret {
+  background: url(../img/selectbox-icon.png) no-repeat;
+  background-position: 2px 0px;
+  width: 35px;
+  height: 41px;
+  top: 15%;
+  right: 6px;
+  border-top: 0px dashed;
+  border-top: 0px solid \9;
+  border-right: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 0px dashed;
+}
+
+.live-search-panel .select .bootstrap-select button.dropdown-toggle:hover {
+  color: #383f44 !important;
+  background-color: #ffffff;
+  border-color: #e2e2e2;
+}
+
+.live-search-panel .select .bootstrap-select button.dropdown-toggle:focus {
+  outline: none !important;
+  outline: 0px auto -webkit-focus-ring-color !important;
+  outline-offset: 0;
+  color: #383f44 !important;
+  background-color: #ffffff;
+  border-color: #e2e2e2;
+}
+
+.live-search-panel .select .bootstrap-select button.dropdown-toggle:active {
+  color: #383f44 !important;
+  background-color: #ffffff;
+  border-color: #e2e2e2;
+}
+
+.live-search-panel .select .open button.dropdown-toggle {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.live-search-panel .select .bootstrap-select .dropdown-menu {
+  border: 1px solid #e2e2e2;
+  border: 1px solid #e2e2e2;
+  margin: 7px 0 0;
+  border-radius: 0px 0px 25px 25px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  /*min-height: 50px !important;*/
+  max-height: 266px !important;
+  top: 34px !important;
+  z-index: 99999 !important;
+}
+/*.live-search-panel .select .bootstrap-select.open .dropdown-menu {
+  min-height:250px !important;
+}*/
+
+.w370 {
+  width: 350px;
+}
+
+.bs-searchbox input {
+  border: 1px solid #e2e2e2;
+  border-radius: 25px;
+  height: 42px;
+  padding: 6px 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  font-family: 'ProximaNova-Regular';
+  color: #383f44;
+  font-size: 16px;
+}
+
+.live-search-panel .select .open button.dropdown-toggle {
+  background-color: #ffffff;
+}
+
+.live-search-panel .select .bootstrap-select .dropdown-menu > li > a {
+  padding: 6px 20px;
+  color: #666666;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e2e2;
+  font-family: 'ProximaNova-Regular';
+}
+
+.live-search-panel .select .bootstrap-select .dropdown-menu > li:last-child a {
+  border-bottom: 0px solid #e2e2e2;
+}
+
+.live-search-panel .select .bootstrap-select .dropdown-menu > li > a:hover, .live-search-panel .select .bootstrap-select .dropdown-menu > li > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.live-search-panel .select .bootstrap-select .dropdown-menu > .active > a, .live-search-panel .select .bootstrap-select .dropdown-menu > .active > a:hover, .live-search-panel .select .bootstrap-select .dropdown-menu > .active > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+
